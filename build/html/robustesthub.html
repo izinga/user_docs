@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>12. RobusTest Hub &mdash; RobusTest Documentation 1.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="RobusTest Documentation 1.1 documentation" href="index.html"/>
+        <link rel="next" title="13. Troubleshooting" href="troubleshooting.html"/>
+        <link rel="prev" title="11. Scheduling your tests" href="scheduling.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RobusTest Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">2. Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">3. Create Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manualtesting.html">4. Manual Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recordingtestcase.html">5. Recording Test Case</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recordingtestcaseadvanced.html">6. Advanced Recording Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="liveview.html">7. Live View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runningautomation.html">8. Running Automation Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performancetesting.html">9. Performance Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automationreports.html">10. Automation Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scheduling.html">11. Scheduling your tests</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">12. RobusTest Hub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">13. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releasenotes.html">14. Release Notes</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">RobusTest Documentation</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>12. RobusTest Hub</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/robustesthub.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="robustest-hub">
+<h1>12. RobusTest Hub<a class="headerlink" href="#robustest-hub" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><img alt="_images/buildURL.png" src="_images/buildURL.png" />
+</div></blockquote>
+<p>Configuration</p>
+<p>Using RobusTest Hub, you can run your own Appium tests on devices connected to the RobusTest device cloud. You need make changes at a few places in your test script to get going. More specifically these changes need to be made to the desired capabilities that are specified before starting an Appium Server. Following are the values that need to be provided/updated in the desired capabilities object</p>
+<ol class="arabic simple">
+<li>app - You can set the app value to the build URL that is created for every build that is uploaded to RobusTest. In case you wish to execute your tests on a specific build, you just need to select that build from the Project Dashboard and copy the link to the build by clicking on the Selected Build URL button. The URL will look something like</li>
+</ol>
+<p><a class="reference external" href="http://192.168.1.1:8081/build/581b074e7ec1653a30d1f438/581ae4a37ec165084ea9cdc3/581b074e7ec1653a30d1f439.apk">http://192.168.1.1:8081/build/581b074e7ec1653a30d1f438/581ae4a37ec165084ea9cdc3/581b074e7ec1653a30d1f439.apk</a></p>
+<p>You can also use the standard URL for the latest build by using the Latest Build URL available on the Project Dashboard. The URL will look something like</p>
+<p><a class="reference external" href="http://192.168.1.1:8081/build/581b074e7ec1653a30d1f438/581ae4a37ec165084ea9cdc3/latest.apk">http://192.168.1.1:8081/build/581b074e7ec1653a30d1f438/581ae4a37ec165084ea9cdc3/latest.apk</a></p>
+<ol class="arabic simple" start="2">
+<li>device - set this value to the name of the device that you wish to run on. The list of names of devices available for use can be obtained from the device dialog available when you click on Record button on the project page. You can also get the list of available devices using the device list API</li>
+</ol>
+<p><a class="reference external" href="http://192.168.1.1:3142/devices">http://192.168.1.1:3142/devices</a></p>
+<p>The response of the above API looks like below</p>
+<p>{&#8220;available&#8221;: [{&#8220;available&#8221;: &#8220;Yes&#8221;, &#8220;supportHub&#8221;: &#8220;Yes&#8221;, &#8220;gmsversion&#8221;: &#8220;5.0.2&#8221;, &#8220;name&#8221;: &#8220;SM-G530H&#8221;, &#8220;supportManual&#8221;: &#8220;Yes&#8221;, &#8220;supportAutomation&#8221;: &#8220;Yes&#8221;, &#8220;adb_id&#8221;: &#8220;404b6569&#8221;, &#8220;reservedForProject&#8221;: [], &#8220;os&#8221;: &#8220;android&#8221;}], &#8220;busy&#8221;: [], &#8220;totalOffline&#8221;: 0, &#8220;offline&#8221;: [], &#8220;total&#8221;: 1, &#8220;totalBusy&#8221;: 0, &#8220;totalAvailable&#8221;: 1}</p>
+<p>From the response, one can find out details like availability of device for RobusTest Hub, device name, Android version, etc., This response can be used to filter out devices that can be used to run Appium tests on the Hub.</p>
+<ol class="arabic simple" start="3">
+<li>Change the Appium URL to point to the RobusTest Hub. If you are running your tests on a local instance of Appium using devices connected to your system, the Appium URL will look like</li>
+</ol>
+<p><a class="reference external" href="http://localhost:4723/wd/hub">http://localhost:4723/wd/hub</a></p>
+<p>Change this value to point to the RobusTest Hub.</p>
+<p>After the change, your RobusTest Hub URL will look like</p>
+<p><a class="reference external" href="http://192.168.1.1:3142/wd/hub">http://192.168.1.1:3142/wd/hub</a></p>
+<p>Test Execution</p>
+<p>Once you have made the above changes, run the tests as you would normally do i.e. as you a pre-configured job or from your system.</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="troubleshooting.html" class="btn btn-neutral float-right" title="13. Troubleshooting" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="scheduling.html" class="btn btn-neutral" title="11. Scheduling your tests" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Izinga Software Pvt Ltd.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

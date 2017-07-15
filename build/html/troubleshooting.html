@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>13. Troubleshooting &mdash; RobusTest Documentation 1.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="RobusTest Documentation 1.1 documentation" href="index.html"/>
+        <link rel="next" title="14. Release Notes" href="releasenotes.html"/>
+        <link rel="prev" title="12. RobusTest Hub" href="robustesthub.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RobusTest Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">2. Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">3. Create Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manualtesting.html">4. Manual Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recordingtestcase.html">5. Recording Test Case</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recordingtestcaseadvanced.html">6. Advanced Recording Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="liveview.html">7. Live View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runningautomation.html">8. Running Automation Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performancetesting.html">9. Performance Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automationreports.html">10. Automation Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scheduling.html">11. Scheduling your tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robustesthub.html">12. RobusTest Hub</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">13. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releasenotes.html">14. Release Notes</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">RobusTest Documentation</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>13. Troubleshooting</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/troubleshooting.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="troubleshooting">
+<h1>13. Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><img alt="_images/dilbert_troubleshooting.png" src="_images/dilbert_troubleshooting.png" />
+<p><a class="reference external" href="http://dilbert.com/strip/2014-11-22">Image credit-Dilbert</a></p>
+<blockquote>
+<div></div></blockquote>
+</div></blockquote>
+<p>There are two ways to deal with this. We either say that you will never land in inexpliciable situations with our product or we give you a list of possible places where you may be stuck and subtly shift the blame on you. We will take the latter route.</p>
+<p>Following are some issues that you may come across when using RobusTest. In case you do not find the issue you are facing on this page, log a support ticket by clicking <a class="reference external" href="http://robustest.freshdesk.com">here</a></p>
+<blockquote>
+<div><p><strong>I tried to click on Manual or Automation buttons but I get a message Unable to reach node server</strong></p>
+<blockquote>
+<div>This may happen because your computer is accessing RobusTest through a proxy server and the server is blocking WebSocket protocol</div></blockquote>
+</div></blockquote>
+<p>I ran my automation tests on the RobusTest Hub but I do not see anything in Live View</p>
+<blockquote>
+<div>A build URL is generated uniquely for every build and user. So, this could be because the build URL you are using to run your tests belongs to another person (and s/he is the one seeing an entry in his/her live view)</div></blockquote>
+<p>I am unable to see the test steps in the Live View for my device</p>
+<blockquote>
+<div><p>In case you are using RobusTest from behind a firewall, it is possible that the information related to test steps execution is being stopped. One check for this would be to run the following command</p>
+<p>telnet &lt;RobusTest Installation Address&gt; &lt;port#&gt;</p>
+<p>In case the connection is not successful, it is probable that the reason for not being able to view the test steps in Live View is the stopping of information by the firewall.</p>
+</div></blockquote>
+<dl class="docutils">
+<dt>I am unable to access RobusTest</dt>
+<dd><blockquote class="first">
+<div><p>Make sure your computer is connected to the network.
+Check if the server is running and reachable by executing a ping command on the RobusTest server</p>
+<p>ping &lt;RobusTest server IP address&gt;</p>
+<p>If the ping command is unsuccessful and you are unable to get a response from the server, it either means that the server is
+unreachable or that the server is down. Please check on this with your IT team
+If the ping command is successful and you are able to reach the server, then we check if the RobusTest server is running
+successfully.</p>
+<p>Visit the RobusTest processes page and ensure that all processes are running as expected
+The URL for RobusTest processes page looks as below</p>
+<p><a class="reference external" href="http:/">http:/</a>/&lt;robustest server url&gt;:9001</p>
+<p>Make sure all the processes are in running state.
+In case the URL above is not reachable, it means the RobusTest server is not running.
+Start the RobusTest application by running the following command on the system. You will need to login to the RobusTest server
+using putty or similar tool.</p>
+<blockquote>
+<div># cd /opt/code/RobusTest
+# screen -S FrontEnd
+# sudo su (enter the password when prompted)
+# ./StartServer.sh</div></blockquote>
+</div></blockquote>
+<p class="last">To find out the IP addresses of the deployment servers other such details, please contact your RobusTest administrator.</p>
+</dd>
+</dl>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="releasenotes.html" class="btn btn-neutral float-right" title="14. Release Notes" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="robustesthub.html" class="btn btn-neutral" title="12. RobusTest Hub" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Izinga Software Pvt Ltd.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

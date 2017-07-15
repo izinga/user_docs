@@ -1,0 +1,264 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4. Manual Testing &mdash; RobusTest Documentation 1.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="RobusTest Documentation 1.1 documentation" href="index.html"/>
+        <link rel="next" title="5. Recording Test Case" href="recordingtestcase.html"/>
+        <link rel="prev" title="3. Create Project" href="project.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RobusTest Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">2. Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">3. Create Project</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Manual Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recordingtestcase.html">5. Recording Test Case</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recordingtestcaseadvanced.html">6. Advanced Recording Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="liveview.html">7. Live View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runningautomation.html">8. Running Automation Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performancetesting.html">9. Performance Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automationreports.html">10. Automation Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scheduling.html">11. Scheduling your tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robustesthub.html">12. RobusTest Hub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">13. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releasenotes.html">14. Release Notes</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">RobusTest Documentation</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>4. Manual Testing</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/manualtesting.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="manual-testing">
+<h1>4. Manual Testing<a class="headerlink" href="#manual-testing" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><img alt="_images/deviceselection.png" src="_images/deviceselection.png" />
+</div></blockquote>
+<p>Once you have selected the build you wish to test, click on the Manual tile to start executing your manual tests.
+Clicking on Manual tile will show you the device selection dialog. Select the device you wish to test on by clicking on the Select button.</p>
+<p>Alternatively, you can also filter devices by platform version, screen size, hardware configuration e.g. Memory and CPU.</p>
+<p>Once you select the device, the device is made available to you - but only after the earlier sessions have been cleaned up and any unwanted apps have been removed. Once the device is ready for use, the selected build is installed on the device and is ready for you to start your tests.</p>
+<p>The Manual test screen consists of three main parts</p>
+<img alt="_images/manualtesting.png" class="align-center" src="_images/manualtesting.png" />
+<p><em>Device Screen:</em> This is the screen of the device that you wish to test on. You can perform various gestures like tap, swipe, scroll with the help of mouse/trackpad and keyboard. The buttons at the bottom of the screen are available for use as Android navigation buttons.</p>
+<p><em>PS: We recommend using a mouse (of the computer kind) as opposed to a trackpad for a better test experience.</em></p>
+<p><em>Test Configuration Section:</em> This section provides features to perform the tests in an enhanced environment and to make the job of testing easier. Following is a brief on each of these features</p>
+<img alt="_images/manualtestheader.png" class="align-center" src="_images/manualtestheader.png" />
+<ol class="arabic">
+<li><p class="first">Simulate Network Condition - Use this option to simulate a specific type of network e.g. EDGE, HSPA, 3G, WiFi. Note that all the network conditions are simulated on WiFi. You can also use this feature to turn off WiFi and test how your app works without data network.</p>
+<blockquote>
+<div><p>PS: Your device could also have data network through carrier, in which case you can turn it off for correct results.</p>
+</div></blockquote>
+</li>
+<li><p class="first">Simulate device location: Use this feature to set the location of your device by providing the latitude and longitude of the location you wish to set the device location to.</p>
+</li>
+<li><p class="first">Simulate Device Orientation: You can use this feature to simulate the orientation of the device. Change device orientation to test app performance and functionality in landscape and portrait modes.</p>
+</li>
+<li><p class="first">Device Logs: You can view the logcat report in a tabular format with options to filter by tag or by the log level. You can also export the log in CSV format. You can also view the Application Not Responding(ANR) log report to investigate any cases of, well, &#8220;Application Not Responding&#8221;</p>
+</li>
+<li><p class="first">Control Screen Size: You can also control the size of the screen using the slider widget. This is useful in case you want to look at the app in more detail and want to verify the rendering of various objects on the screen.</p>
+</li>
+<li><p class="first">Collaborate: While you are testing your application, you can easily collaborate with your team by sharing the device screen with them. You can also get the screen of the device you are testing on, on your own mobile device by scanning the QR code on the collaborate pop-up.</p>
+<blockquote>
+<div><p>PS: Note that in case of enterprise installations, your RobusTest installation should be reachable from the device or computer you are using to access the device.</p>
+</div></blockquote>
+</li>
+<li><p class="first">Screenshot - If you wish to take screenshot of a particular screen on your app, you just need to click on the Screenshot button.</p>
+</li>
+<li><p class="first">Distraction-free mode - Use the device in this mode, in case you wish to blank out everything else on the manual test screen and view just the device.</p>
+</li>
+</ol>
+<p><em>Performance Graph:</em> The performance graph has three sub-sections - CPU, Memory and Network.</p>
+<ul class="simple">
+<li>In the CPU graph you can monitor the percentage of CPU being used in User and Kernel modes.</li>
+<li>In the Memory graph, you can monitor the memory being used by the app including heap allocations. The following link is a useful place to start understanding the various metrics presented in the Memory graph <a class="reference external" href="http://developer.android.com/tools/debugging/debugging-memory.html">http://developer.android.com/tools/debugging/debugging-memory.html</a></li>
+<li>In the Network graph, you can look at the data exchanged from the device to the network - in real time as well as cumulatively.</li>
+</ul>
+<p>These graphs are very useful in studying the performance of the app especially with respect to any actions performed on the app.</p>
+<p>Once your test is complete, you can click on End Session to exit the test session.</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="recordingtestcase.html" class="btn btn-neutral float-right" title="5. Recording Test Case" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="project.html" class="btn btn-neutral" title="3. Create Project" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Izinga Software Pvt Ltd.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
