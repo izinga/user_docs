@@ -8,9 +8,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>6. Advanced Recording Concepts &mdash; RobusTest Documentation 1.1 documentation</title>
+  <title>7. Advanced Recording Concepts &mdash; RobusTest Documentation 1.1 documentation</title>
   
 
+  
+  
   
   
 
@@ -34,8 +36,8 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="RobusTest Documentation 1.1 documentation" href="index.html"/>
-        <link rel="next" title="7. Live View" href="liveview.html"/>
-        <link rel="prev" title="5. Recording Test Case" href="recordingtestcase.html"/> 
+        <link rel="next" title="8. Live View" href="liveview.html"/>
+        <link rel="prev" title="6. Recording Test Case" href="recordingtestcase.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -44,6 +46,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -84,21 +87,25 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">2. Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project.html">3. Create Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manualtesting.html">4. Manual Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recordingtestcase.html">5. Recording Test Case</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Advanced Recording Concepts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="liveview.html">7. Live View</a></li>
-<li class="toctree-l1"><a class="reference internal" href="runningautomation.html">8. Running Automation Tests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performancetesting.html">9. Performance Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="automationreports.html">10. Automation Reports</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scheduling.html">11. Scheduling your tests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="robustesthub.html">12. RobusTest Hub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">13. Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="releasenotes.html">14. Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projectmanagement.html">4. Project Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manualtesting.html">5. Manual Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recordingtestcase.html">6. Recording Test Case</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. Advanced Recording Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="liveview.html">8. Live View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runningautomation.html">9. Running Automation Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performancetesting.html">10. Performance Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automationreports.html">11. Automation Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scheduling.html">12. Scheduling your tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robustesthub.html">13. RobusTest Hub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">14. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releasenotes.html">15. Release Notes</a></li>
 </ul>
 
             
@@ -111,8 +118,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">RobusTest Documentation</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RobusTest Documentation</a>
+        
       </nav>
 
 
@@ -121,30 +130,47 @@
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>6. Advanced Recording Concepts</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>7. Advanced Recording Concepts</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="_sources/recordingtestcaseadvanced.txt" rel="nofollow"> View page source</a>
+            
+            <a href="_sources/recordingtestcaseadvanced.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="section" id="advanced-recording-concepts">
-<h1>6. Advanced Recording Concepts<a class="headerlink" href="#advanced-recording-concepts" title="Permalink to this headline">¶</a></h1>
+<h1>7. Advanced Recording Concepts<a class="headerlink" href="#advanced-recording-concepts" title="Permalink to this headline">¶</a></h1>
 <p><em>Recording a test case involving OTP verification</em></p>
 <p>In some test cases, the device receives an OTP from the server as a text message or as an email. The user needs to input the secret number into a text field for verification. RobusTest has libraries to support such scenarios and following is a brief idea on how such a test case can be recorded.</p>
 <p>Recording a test case with OTP received as text message</p>
@@ -177,18 +203,18 @@ otp = self.getOTPFromSMS(‘&lt;SENDER&gt;’, &#39;&lt;SAMPLE MESSAGE&gt;&#39;)
 </div>
 </li>
 </ol>
-<p>e.g. If your server sends an OTP message from <strong>TD-SAMPLEAPP</strong> and the message sent is &#8220;Thank you for signing up. Your OTP is 234567&#8221; then your invocation statement should look like</p>
+<p>e.g. If your server sends an OTP message from <strong>TD-SAMPLEAPP</strong> and the message sent is “Thank you for signing up. Your OTP is 234567” then your invocation statement should look like</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">otp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getOTPFromSMS</span><span class="p">(</span><span class="s1">&#39;TD-SAMPLEAPP&#39;</span><span class="p">,</span> <span class="s1">&#39;Thank you for signing up. Your OTP is 234567&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The value of the OTP gets captured in the variable &#8220;otp&#8221;</p>
+<p>The value of the OTP gets captured in the variable “otp”</p>
 <p>In the next statement in the code, where the OTP value is entered in the text field, replace the variable used to enter OTP with the otp variable.</p>
 <p>e.g. The statement to enter a value in the text field may look like</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Type_123456_in_EditText_vericode1_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getElement</span><span class="p">(</span><span class="s2">&quot;Type_123456_in_EditText_vericode1_&quot;</span><span class="p">,</span> <span class="s2">&quot;EditText com.flipkart.android:id/vericod&quot;</span><span class="p">)</span>
 <span class="n">Type_123456_in_EditText_vericode1_</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">userData</span><span class="p">[</span><span class="s2">&quot;EditText com.flipkart.android:id/vericod&quot;</span><span class="p">])</span>
 </pre></div>
 </div>
-<p>After replacing it with the variable &#8220;otp&#8221;, the statement looks like</p>
+<p>After replacing it with the variable “otp”, the statement looks like</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Type_123456_in_EditText_vericode1_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getElement</span><span class="p">(</span><span class="s2">&quot;Type_123456_in_EditText_vericode1_&quot;</span><span class="p">,</span> <span class="s2">&quot;EditText com.flipkart.android:id/vericod&quot;</span><span class="p">)</span>
 <span class="n">Type_123456_in_EditText_vericode1_</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="n">otp</span><span class="p">)</span>
 </pre></div>
@@ -197,15 +223,18 @@ otp = self.getOTPFromSMS(‘&lt;SENDER&gt;’, &#39;&lt;SAMPLE MESSAGE&gt;&#39;)
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="liveview.html" class="btn btn-neutral float-right" title="7. Live View" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="liveview.html" class="btn btn-neutral float-right" title="8. Live View" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="recordingtestcase.html" class="btn btn-neutral" title="5. Recording Test Case" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="recordingtestcase.html" class="btn btn-neutral" title="6. Recording Test Case" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -239,13 +268,14 @@ otp = self.getOTPFromSMS(‘&lt;SENDER&gt;’, &#39;&lt;SAMPLE MESSAGE&gt;&#39;)
             VERSION:'1.1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
