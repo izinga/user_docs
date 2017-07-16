@@ -35,7 +35,10 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="RobusTest Documentation 1.1 documentation" href="index.html"/> 
+    <link rel="top" title="RobusTest Documentation 1.1 documentation" href="index.html"/>
+        <link rel="up" title="4. Project Management" href="projectmanagement.html"/>
+        <link rel="next" title="5. Manual Testing" href="manualtesting.html"/>
+        <link rel="prev" title="4. Project Management" href="projectmanagement.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -88,21 +91,25 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">2. Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project.html">3. Create Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manualtesting.html">4. Manual Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recordingtestcase.html">5. Recording Test Case</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recordingtestcaseadvanced.html">6. Advanced Recording Concepts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="liveview.html">7. Live View</a></li>
-<li class="toctree-l1"><a class="reference internal" href="runningautomation.html">8. Running Automation Tests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performancetesting.html">9. Performance Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="automationreports.html">10. Automation Reports</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scheduling.html">11. Scheduling your tests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="robustesthub.html">12. RobusTest Hub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">13. Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="releasenotes.html">14. Release Notes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="projectmanagement.html">4. Project Management</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1. Configuring Bug Tracker</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="manualtesting.html">5. Manual Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recordingtestcase.html">6. Recording Test Case</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recordingtestcaseadvanced.html">7. Advanced Recording Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="liveview.html">8. Live View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runningautomation.html">9. Running Automation Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performancetesting.html">10. Performance Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automationreports.html">11. Automation Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scheduling.html">12. Scheduling your tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robustesthub.html">13. RobusTest Hub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">14. Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releasenotes.html">15. Release Notes</a></li>
 </ul>
 
             
@@ -147,6 +154,8 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
+          <li><a href="projectmanagement.html">4. Project Management</a> &raquo;</li>
+        
       <li>1. Configuring Bug Tracker</li>
     
     
@@ -170,7 +179,16 @@
 <h1>1. Configuring Bug Tracker<a class="headerlink" href="#configuring-bug-tracker" title="Permalink to this headline">¶</a></h1>
 <blockquote>
 <div><img alt="_images/bugtrackersettings.png" src="_images/bugtrackersettings.png" />
-<p>RobusTest easily integrates with multiple bug tracking tools enabling easier</p>
+<p>RobusTest enables easy integration with most of the popular bug tracking tools including JIRA, Bugzilla, Redmine, Asana, Assembla. You can integrate your RobusTest project with your bug tracking tool by providing a few simple configuration details.</p>
+<ol class="arabic simple">
+<li>You can configure bug tracking for projects that you administer. If you are not an administrator for the project you use, simply ask your project administrator to configure bug tracking.</li>
+<li>If you are an administrtor of the project, on the project dashboard you will see a section of administrator options. Under that option you will find an option to provide your bug tracker settings.</li>
+<li>Click on the button and you will see a dialog with various options required to enable integration.</li>
+<li>Select the bug tracker you wish to integrate with, the URL of the bug tracker server, the JIRA project key for the project you wish to integrate with, and login credentials for the project. Please note that these credentials should for an administor privileges to the JIRA project.</li>
+<li>Save your settings.</li>
+<li>Once you save your settings, the system will return a confirmation message that settings have been saved successfully.</li>
+<li>In case settings have not been saved, a message will be provided along with the reason for error.</li>
+</ol>
 </div></blockquote>
 </div>
 
@@ -181,6 +199,15 @@
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="manualtesting.html" class="btn btn-neutral float-right" title="5. Manual Testing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="projectmanagement.html" class="btn btn-neutral" title="4. Project Management" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
